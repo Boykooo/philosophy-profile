@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: philosophy-profile
+  datasource:
+    url: ${DATABASE_HOST_URL:jdbc:postgresql://localhost:5432/postgres}
+    username: ${DATABASE_USER:postgres}
+    password: ${DATABASE_PASSWORD:1234}
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
